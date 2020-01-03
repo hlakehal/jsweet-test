@@ -13,7 +13,8 @@ public class Main {
 				"es2015",
 				"--targetVersion",
 				"ES6",
-				"--tsOnly"
+				"--tsOnly",
+				"-v"
 		};
 		
 		JSweetCommandLineLauncher.main(args);

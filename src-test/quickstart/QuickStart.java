@@ -31,6 +31,8 @@ public class QuickStart {
 		// use of the JavaScript DOM API
 		//alert(a.toString());
 		BigDecimal d = new BigDecimal(10.2);
+		BigDecimal d2 = BigDecimal.valueOf(10.2);
+		BigDecimal d3 = BigDecimal.ONE;
 		System.out.println(d.add(new BigDecimal(2)));
 	}
 

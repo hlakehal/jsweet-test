@@ -37,6 +37,10 @@ public class TestAdapter extends PrinterAdapter {
 		if (BigDecimal.class.getName().equals(importedClass.toString())) {
 			return new ModuleImportDescriptor(currentCompilationUnit.getPackage(), "Big", "big.js");
 		}
+		if (importedClass.getQualifiedName().toString().startsWith("java.") && !BigDecimal.class.getName().equals(importedClass.getQualifiedName().toString())) {
+			return new ModuleImportDescriptor(true, currentCompilationUnit.getPackage(), importedClass.getSimpleName().toString(), importedClass.getQualifiedName().toString());
+		}
+		
 		return super.getModuleImportDescriptor(currentCompilationUnit, importedName, importedClass);
 	}
 
