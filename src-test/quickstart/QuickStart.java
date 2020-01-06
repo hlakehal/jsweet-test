@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import quickstart.annotation.TestAnnotation;
+import annotation.TestAnnotation;
 
 /**
  * This class is used within the webapp/index.html file.

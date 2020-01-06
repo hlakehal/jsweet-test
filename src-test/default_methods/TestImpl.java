@@ -1,4 +1,4 @@
-package quickstart;
+package default_methods;
 
 public class TestImpl implements Test {
 

@@ -10,9 +10,9 @@ import org.jsweet.transpiler.extension.PrinterAdapter;
 import org.jsweet.transpiler.model.CompilationUnitElement;
 import org.jsweet.transpiler.model.ImportElement;
 
-public class TestAdapter extends PrinterAdapter {
+public class ImportAdapter extends PrinterAdapter {
 
-	public TestAdapter(PrinterAdapter parentAdapter) {
+	public ImportAdapter(PrinterAdapter parentAdapter) {
 		super(parentAdapter);
 	}
 
